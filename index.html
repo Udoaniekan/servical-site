@@ -14,10 +14,25 @@
       color: #333;
     }
     header {
-      background: #007bff;
+      background: url('artisan.jpg') no-repeat center center/cover;
       color: white;
-      padding: 2rem;
+      padding: 6rem 2rem;
       text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* dark overlay for text readability */
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
     }
     section {
       padding: 2rem;
@@ -78,7 +93,7 @@
     <p>We are a passionate team of developers, designers, and product thinkers dedicated to solving real-world service delivery problems through technology.</p>
 
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:servicallhq@gmail.com">servicallhq@gmail.com</a></p>
+    <p>Email: <a href="mailto:servicalteam@gmail.com">servicallhq@gmail.com</a></p>
   </section>
 
   <footer>
